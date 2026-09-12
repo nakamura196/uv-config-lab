@@ -130,6 +130,7 @@ probe.html          画像サーバの所要時間とキャッシュの有無を
 configs/_base.json  4種に共通の土台（日本語ラベルのみ）
 configs/*.json      設定の差分 4 種
 serve-https.zsh     ローカルを https で配信する（上記の Referer 対策）
+.nojekyll           GitHub Pages の Jekyll 処理を止める（無いと _base.json が 404 になる）
 ```
 
 `viewer.html` は本番ポータルのラッパー（`libraries/uv/uv.html`）をなぞっています。
