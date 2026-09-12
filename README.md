@@ -16,6 +16,8 @@ Universal Viewer の**ダウンロード設定だけを変えたビューアを�
 | 2 つの設定を戻すと**選択肢が 3 つ**になる | 同上（`fixed` を選ぶ） |
 | `maxImageWidth` を既定の 5000 に戻しても**フルサイズは消えない** | 同上（`portal-maxwidth-5000` を選ぶ） |
 | UV を 4.4.4 に上げても**何も変わらない** | 同上（バージョン切替） |
+| 増やした選択肢が**押すと 404 になる**（`@id` の食い違い） | `index.html` で `fixed` の選択肢を実際に押す |
+| `@id` を揃えると**3 つとも通る** | 「使うマニフェスト」を写しに替えて押し直す |
 | 画像サーバに**変換結果のキャッシュが無い** | `probe.html`「同じ URL を 3 回」 |
 | サーバが `maxWidth` を宣言していない（＝ UV の安全弁が効かない）| `probe.html` の info.json 欄 |
 
@@ -32,6 +34,46 @@ headless Chrome でダウンロードのダイアログを実際に開いて、�
 | `uv-default` | **3 つ** — 現在の表示 / 全体画像 7514 x 6132px / 全体画像 1000 x 816px |
 
 UV を 4.4.4 に上げても結果は 1 文字も変わりません。**ビューアの古さはこの件の原因ではありません。**
+
+## 選択肢が増えても、押すと 404 になる
+
+`fixed` で増えた 2 つは、押しても画像が落ちてきません。UV が開く URL を
+`window.open` を横取りして取ると、こうなっています（2026-09-12 実測）。
+
+| 選択肢 | UV が開く URL | |
+|---|---|---|
+| 現在の表示 | `…/iiif/<a>/<b>/<c>.tif/`**`<a>%2F<b>%2F<c>.tif`**`/0,0,…` | **404** |
+| 全体画像 7514px | `…/iiif/2/<a>%2F<b>%2F<c>.tif/full/7514,/…` | 200 |
+| 全体画像 2000px | `…/iiif/<a>/<b>/<c>.tif/`**`<a>%2F<b>%2F<c>.tif`**`/full/2000,1632/…` | **404** |
+
+識別子が二重に入っています。原因は、同じ画像を指す 2 つの `@id` が食い違っていることです。
+
+```
+マニフェストの service @id : https://<iiif-host>/iiif/<a>/<b>/<c>.tif
+info.json の @id           : https://<iiif-host>/iiif/2/<a>%2F<b>%2F<c>.tif
+```
+
+UV は選択肢ごとに URL の組み立て方が違います。フルサイズは `getCanonicalImageUri()` が
+`info.json` の `@id` をそのまま基点にするので通ります。残り 2 つはマニフェスト側の base に
+`info.json` 側の識別子を継ぎ足すので、食い違っていると二重になります。
+
+**フルサイズしか出していない現行設定では、この不具合は一度も表面化していませんでした。**
+
+画面上部の「使うマニフェスト」を**「service @id を info.json に合わせた写し」**に替えると、
+3 つとも正しい URL になり 200 で返ります。写しは `tools/make-canonical-manifest.mjs` で作れます。
+
+```
+node tools/make-canonical-manifest.mjs <manifest-url> manifests/canonical-service-id.json
+```
+
+直し方は 2 通りです。
+
+1. **サーバ側** — 識別子を書き換えている逆プロキシで `X-IIIF-ID` を立て、`info.json` の
+   `@id` をマニフェストに合わせる（Cantaloupe がこのヘッダに対応しています）。
+   外から付けても効きません（効いてはいけません）ので、確認はサーバ側でしかできません
+2. **マニフェスト側** — `service["@id"]` を `info.json` の正規形に合わせる。
+   スラッシュ形式の URL は逆プロキシの書き換えが引き続き受けるので、既に出回っている
+   サムネイルや画像のリンクは壊れません
 
 ## 設定の差分
 
@@ -129,6 +171,8 @@ viewer.html         UV のラッパー。?config= ?manifest= ?pos= ?uv= を取�
 probe.html          画像サーバの所要時間とキャッシュの有無を測るページ
 configs/_base.json  4種に共通の土台（日本語ラベルのみ）
 configs/*.json      設定の差分 4 種
+manifests/          service @id を info.json に合わせたマニフェストの写し
+tools/              その写しを作るスクリプト
 serve-https.zsh     ローカルを https で配信する（上記の Referer 対策）
 .nojekyll           GitHub Pages の Jekyll 処理を止める（無いと _base.json が 404 になる）
 ```
