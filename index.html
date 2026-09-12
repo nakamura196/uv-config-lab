@@ -77,7 +77,7 @@
     <div style="margin-top:6px">
       <label for="preset" style="display:inline">使うマニフェスト</label>
       <select id="preset" style="margin-top:4px">
-        <option value="portal">現行（ポータルが出しているもの）</option>
+        <option value="current">現行（公開サイトが出しているもの）</option>
         <option value="canonical">service @id を info.json に合わせた写し</option>
       </select>
     </div>
@@ -106,8 +106,8 @@
   <li>上の「使うマニフェスト」を<strong>「service @id を info.json に合わせた写し」</strong>に替えて、
       同じ 3 つを押し直す。今度は<strong>全部通る</strong>。</li>
   <li>左右それぞれのビューアで、下部のツールバーにある<strong>ダウンロードのアイコン</strong>を押す。</li>
-  <li>出てくる選択肢の<strong>数</strong>を数える。<code>portal</code> は 1 つ、<code>fixed</code> は 3 つになるはず。</li>
-  <li>左を <code>portal</code>、右を <code>portal-maxwidth-5000</code> に切り替える。
+  <li>出てくる選択肢の<strong>数</strong>を数える。<code>current</code> は 1 つ、<code>fixed</code> は 3 つになるはず。</li>
+  <li>左を <code>current</code>、右を <code>current-maxwidth-5000</code> に切り替える。
       <code>maxImageWidth</code> を既定の 5000 に戻しても<strong>フルサイズの選択肢が消えない</strong>ことを確かめる
       （画像は幅 7514px なので、もしこの設定が画像幅に効いているなら消えるはず）。</li>
   <li>UV のバージョンを 4.4.4 に切り替えて、<strong>何も変わらない</strong>ことを確かめる。</li>
@@ -120,8 +120,8 @@
   <thead>
     <tr>
       <th>設定キー</th>
-      <th>portal</th>
-      <th>portal-maxwidth-5000</th>
+      <th>current</th>
+      <th>current-maxwidth-5000</th>
       <th>fixed</th>
       <th>uv-default</th>
     </tr>
@@ -169,12 +169,12 @@
   var DEFAULT_MANIFEST = "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/manifest";
   var CANONICAL_MANIFEST = new URL("manifests/canonical-service-id.json", location.href).href;
   var CONFIGS = [
-    { name: "portal",               label: "現行ポータル設定（再現）",                       note: "軽い選択肢を2つとも false。ダウンロード画面にはフルサイズしか出ない。" },
-    { name: "portal-maxwidth-5000", label: "現行設定 + maxImageWidth を既定の 5000 に戻す",  note: "安全弁が効くならフルサイズが消えるはず。消えなければ、この設定は参照されていない。" },
+    { name: "current",               label: "現行設定（再現）",                       note: "軽い選択肢を2つとも false。ダウンロード画面にはフルサイズしか出ない。" },
+    { name: "current-maxwidth-5000", label: "現行設定 + maxImageWidth を既定の 5000 に戻す",  note: "安全弁が効くならフルサイズが消えるはず。消えなければ、この設定は参照されていない。" },
     { name: "fixed",                label: "修正案（軽い選択肢を戻す）",                     note: "2つを true に戻し、confinedImageSize を 2000 へ。フルサイズを押さずに済む道ができる。" },
     { name: "uv-default",           label: "UV 既定（何も上書きしない）",                    note: "UV 本体の既定値のまま。" }
   ];
-  var PANES = ["portal", "fixed"]; // 左右の初期値
+  var PANES = ["current", "fixed"]; // 左右の初期値
 
   var qs = new URLSearchParams(location.search);
   var $manifest = document.getElementById("manifest");

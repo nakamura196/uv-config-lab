@@ -2,7 +2,7 @@
 # ローカルを https で配信する。
 #
 # なぜ必要か:
-#   既定のマニフェストを出しているポータルは、Referer が http:// で始まる要求を
+#   既定のマニフェストを出している公開サイトは、Referer が http:// で始まる要求を
 #   403 で弾く（2026-09-12 実測）。python3 -m http.server は http なので、
 #   ブラウザが送る Referer も http になり、マニフェストが読めない。
 #   https で配信すれば Referer も https になり、通る。

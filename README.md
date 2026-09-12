@@ -4,7 +4,7 @@ Universal Viewer の**ダウンロード設定だけを変えたビューアを�
 
 > **公開ページ:** https://nakamura196.github.io/uv-config-lab/
 
-「IIIF ポータルでフルサイズのダウンロードが 500 になる」「ときどき
+「IIIF 対応のデジタルアーカイブでフルサイズのダウンロードが 500 になる」「ときどき
 `Your log-in attempt did not appear to be successful.` と出る」という問い合わせの
 切り分けで作りました。設定を実際に差し替えて、画面で確かめられるようにしてあります。
 
@@ -14,7 +14,7 @@ Universal Viewer の**ダウンロード設定だけを変えたビューアを�
 |---|---|
 | 現行設定ではダウンロードの選択肢が**フルサイズ 1 つ**しかない | `index.html` の左右比較 |
 | 2 つの設定を戻すと**選択肢が 3 つ**になる | 同上（`fixed` を選ぶ） |
-| `maxImageWidth` を既定の 5000 に戻しても**フルサイズは消えない** | 同上（`portal-maxwidth-5000` を選ぶ） |
+| `maxImageWidth` を既定の 5000 に戻しても**フルサイズは消えない** | 同上（`current-maxwidth-5000` を選ぶ） |
 | UV を 4.4.4 に上げても**何も変わらない** | 同上（バージョン切替） |
 | 増やした選択肢が**押すと 404 になる**（`@id` の食い違い） | `index.html` で `fixed` の選択肢を実際に押す |
 | `@id` を揃えると**3 つとも通る** | 「使うマニフェスト」を写しに替えて押し直す |
@@ -28,8 +28,8 @@ headless Chrome でダウンロードのダイアログを実際に開いて、�
 
 | config | ダウンロードの選択肢 |
 |---|---|
-| `portal` | **1 つ** — 全体画像 7514 x 6132px (jpg) |
-| `portal-maxwidth-5000` | **1 つ** — 全体画像 7514 x 6132px (jpg) ← 5000 に戻しても消えない |
+| `current` | **1 つ** — 全体画像 7514 x 6132px (jpg) |
+| `current-maxwidth-5000` | **1 つ** — 全体画像 7514 x 6132px (jpg) ← 5000 に戻しても消えない |
 | `fixed` | **3 つ** — 現在の表示 / 全体画像 7514 x 6132px / 全体画像 2000 x 1632px |
 | `uv-default` | **3 つ** — 現在の表示 / 全体画像 7514 x 6132px / 全体画像 1000 x 816px |
 
@@ -83,7 +83,7 @@ node tools/make-canonical-manifest.mjs <manifest-url> manifests/canonical-servic
 UV は渡された設定を**既定の設定に深くマージ**するので、差分だけ書けば足ります
 （`BaseContentHandler.configure` → `merge(config, yourConfig)`）。
 
-| キー | portal | portal-maxwidth-5000 | fixed | uv-default |
+| キー | current | current-maxwidth-5000 | fixed | uv-default |
 |---|---|---|---|---|
 | `downloadCurrentViewEnabled` | false | false | **true** | true |
 | `downloadWholeImageLowResEnabled` | false | false | **true** | true |
@@ -91,7 +91,7 @@ UV は渡された設定を**既定の設定に深くマージ**するので、�
 | `confinedImageSize` | 1000 | 1000 | **2000** | 1000 |
 | `maxImageWidth` | 100000 | **5000** | 100000 | 5000 |
 
-`portal` は本番ポータルの `uv-config.json` の該当箇所をそのまま写したものです。
+`current` は本番環境の `uv-config.json` の該当箇所をそのまま写したものです。
 
 ## maxImageWidth は、このサーバでは参照されない
 
@@ -115,7 +115,7 @@ case DownloadOption.WHOLE_IMAGE_HIGH_RES:
 IIIF Image API 2.1 は上限の宣言方法を `maxWidth` / `maxHeight` / `maxArea` の
 3 つ認めていますが、**UV が読むのは `maxWidth` だけ**です。Cantaloupe は `maxArea`
 でうたうため、`getMaxDimensions()` は `null` を返し、`maxImageWidth` との比較は
-一度も行われません。`portal-maxwidth-5000` は、これを画面で確かめるための設定です。
+一度も行われません。`current-maxwidth-5000` は、これを画面で確かめるための設定です。
 
 ## 使い方
 
@@ -129,7 +129,7 @@ zsh serve-https.zsh          # https://localhost:8443/
 
 ### なぜ https で配信するのか
 
-**既定のマニフェストを出しているポータルは、`Referer` が `http://` で始まる要求を
+**既定のマニフェストを出している公開サイトは、`Referer` が `http://` で始まる要求を
 403 で返します**（2026-09-12 実測。`https://` なら通る）。
 
 ```
@@ -177,7 +177,7 @@ serve-https.zsh     ローカルを https で配信する（上記の Referer �
 .nojekyll           GitHub Pages の Jekyll 処理を止める（無いと _base.json が 404 になる）
 ```
 
-`viewer.html` は本番ポータルのラッパー（`libraries/uv/uv.html`）をなぞっています。
+`viewer.html` は本番環境のラッパー（`libraries/uv/uv.html`）をなぞっています。
 `?pos=N` を `canvasIndex = N - 1` として渡し、コマが変わったら `postMessage` で
 親に返すところまで同じです。
 

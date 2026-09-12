@@ -1,6 +1,6 @@
 {
-  "_name": "portal",
-  "_label": "現行ポータル設定（再現）",
+  "_name": "current",
+  "_label": "現行設定（再現）",
   "_note": "軽い選択肢を2つとも false にし、maxImageWidth を 100000 に上げてある。ダウンロード画面にはフルサイズしか出ない。",
   "modules": {
     "downloadDialogue": {

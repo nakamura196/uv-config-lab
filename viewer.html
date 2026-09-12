@@ -25,12 +25,12 @@
 
 <script>
   // ---------------------------------------------------------------
-  // 本番ポータルのラッパー (libraries/uv/uv.html) をなぞった実装。
+  // 本番環境のラッパー (libraries/uv/uv.html) をなぞった実装。
   // 違いは、manifest / config / UV のバージョンを ?query で選べる点だけ。
   // ---------------------------------------------------------------
   var LAB_DEFAULTS = {
     manifest: "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/manifest",
-    config: "portal",
+    config: "current",
     uv: "4.0.25",
     pos: "1"
   };
@@ -41,7 +41,7 @@
     return (v === null || v === "") ? LAB_DEFAULTS[name] : v;
   }
 
-  var CONFIGS = ["portal", "portal-maxwidth-5000", "fixed", "uv-default"];
+  var CONFIGS = ["current", "current-maxwidth-5000", "fixed", "uv-default"];
   var UV_VERSIONS = ["4.0.25", "4.4.4"];
 
   var configName = param("config");
