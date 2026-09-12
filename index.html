@@ -74,6 +74,13 @@
   <div>
     <label for="manifest">IIIF マニフェスト URL</label>
     <input id="manifest" type="url" spellcheck="false" />
+    <div style="margin-top:6px">
+      <label for="preset" style="display:inline">使うマニフェスト</label>
+      <select id="preset" style="margin-top:4px">
+        <option value="portal">現行（ポータルが出しているもの）</option>
+        <option value="canonical">service @id を info.json に合わせた写し</option>
+      </select>
+    </div>
   </div>
   <div>
     <label for="pos">pos（1 始まり）</label>
@@ -92,6 +99,12 @@
 
 <h2>手順</h2>
 <ol class="steps">
+  <li><strong>まず「現行」のまま、<code>fixed</code> の 3 つの選択肢を実際に押してみる。</strong>
+      「現在の表示」と「全体画像 2000px」は <strong>404</strong> になる。フルサイズだけが通る。
+      マニフェストの <code>service @id</code> と <code>info.json</code> の <code>@id</code> が
+      食い違っているため、UV が組み立てる URL の識別子が二重になるから。</li>
+  <li>上の「使うマニフェスト」を<strong>「service @id を info.json に合わせた写し」</strong>に替えて、
+      同じ 3 つを押し直す。今度は<strong>全部通る</strong>。</li>
   <li>左右それぞれのビューアで、下部のツールバーにある<strong>ダウンロードのアイコン</strong>を押す。</li>
   <li>出てくる選択肢の<strong>数</strong>を数える。<code>portal</code> は 1 つ、<code>fixed</code> は 3 つになるはず。</li>
   <li>左を <code>portal</code>、右を <code>portal-maxwidth-5000</code> に切り替える。
@@ -154,6 +167,7 @@
 
 <script>
   var DEFAULT_MANIFEST = "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/manifest";
+  var CANONICAL_MANIFEST = new URL("manifests/canonical-service-id.json", location.href).href;
   var CONFIGS = [
     { name: "portal",               label: "現行ポータル設定（再現）",                       note: "軽い選択肢を2つとも false。ダウンロード画面にはフルサイズしか出ない。" },
     { name: "portal-maxwidth-5000", label: "現行設定 + maxImageWidth を既定の 5000 に戻す",  note: "安全弁が効くならフルサイズが消えるはず。消えなければ、この設定は参照されていない。" },
@@ -218,6 +232,12 @@
   function renderAll() {
     Array.prototype.forEach.call(grid.children, function (pane) { pane._render(); });
   }
+
+  var $preset = document.getElementById("preset");
+  $preset.addEventListener("change", function () {
+    $manifest.value = ($preset.value === "canonical") ? CANONICAL_MANIFEST : DEFAULT_MANIFEST;
+    renderAll();
+  });
 
   [$manifest, $pos, $uv].forEach(function (el) {
     el.addEventListener("change", renderAll);

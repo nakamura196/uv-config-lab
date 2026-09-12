@@ -1,0 +1,3922 @@
+{
+ "@context": "http://iiif.io/api/presentation/2/context.json",
+ "@type": "sc:Manifest",
+ "@id": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/manifest",
+ "label": "顔氏家廟碑 [A006258]（service @id を info.json に合わせた写し）",
+ "thumbnail": "https://da.dl.itc.u-tokyo.ac.jp/portal/sites/default/files/images/assets/asia/2174ef9b-6541-79cc-9d37-a38cac02225c.jpg",
+ "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+ "attribution": "東京大学附属図書館アジア研究図書館上廣倫理財団寄付研究部門 Uehiro Project for the Asian Research Library (U-PARL) of the University of Tokyo Library System, JAPAN",
+ "logo": "https://iiif.dl.itc.u-tokyo.ac.jp/images/ut-logo.jpg",
+ "related": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/2174ef9b-6541-79cc-9d37-a38cac02225c",
+ "seeAlso": "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/2174ef9b-6541-79cc-9d37-a38cac02225c?_format=json",
+ "within": "https://da.dl.itc.u-tokyo.ac.jp/portal/collection/a006258",
+ "viewingDirection": "right-to-left",
+ "metadata": [
+  {
+   "label": "タイトル / Title",
+   "value": "顔氏家廟碑 [A006258]"
+  },
+  {
+   "label": "identifier",
+   "value": "2174ef9b-6541-79cc-9d37-a38cac02225c"
+  },
+  {
+   "label": "Database Label",
+   "value": "顔氏家廟碑"
+  },
+  {
+   "label": "Manifest Uri",
+   "value": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/manifest"
+  },
+  {
+   "label": "attributionLabel",
+   "value": "東京大学附属図書館アジア研究図書館上廣倫理財団寄付研究部門 Uehiro Project for the Asian Research Library (U-PARL) of the University of Tokyo Library System, JAPAN"
+  }
+ ],
+ "sequences": [
+  {
+   "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/iiif/sequence/normal",
+   "@type": "sc:Sequence",
+   "label": "Current Page Order",
+   "viewingHint": "individuals",
+   "canvases": [
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p1",
+     "@type": "sc:Canvas",
+     "label": "[1]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0001.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0001-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0001.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0001.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p1"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p2",
+     "@type": "sc:Canvas",
+     "label": "[2]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0002.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0002-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0002.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0002.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p2"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p3",
+     "@type": "sc:Canvas",
+     "label": "[3]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0003.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0003-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0003.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0003.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p3"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p4",
+     "@type": "sc:Canvas",
+     "label": "[4]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0004.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0004-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0004.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0004.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p4"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p5",
+     "@type": "sc:Canvas",
+     "label": "[5]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0005.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0005-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0005.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0005.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p5"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p6",
+     "@type": "sc:Canvas",
+     "label": "[6]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0006.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0006-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0006.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0006.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p6"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p7",
+     "@type": "sc:Canvas",
+     "label": "[7]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0007.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0007-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0007.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0007.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p7"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p8",
+     "@type": "sc:Canvas",
+     "label": "[8]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0008.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0008-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0008.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0008.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p8"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p9",
+     "@type": "sc:Canvas",
+     "label": "[9]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0009.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0009-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0009.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0009.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p9"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p10",
+     "@type": "sc:Canvas",
+     "label": "[10]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0010.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0010-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0010.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0010.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p10"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p11",
+     "@type": "sc:Canvas",
+     "label": "[11]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0011.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0011-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0011.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0011.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p11"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p12",
+     "@type": "sc:Canvas",
+     "label": "[12]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0012.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0012-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0012.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0012.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p12"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p13",
+     "@type": "sc:Canvas",
+     "label": "[13]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0013.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0013-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0013.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0013.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p13"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p14",
+     "@type": "sc:Canvas",
+     "label": "[14]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0014.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0014-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0014.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0014.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p14"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p15",
+     "@type": "sc:Canvas",
+     "label": "[15]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0015.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0015-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0015.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0015.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p15"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p16",
+     "@type": "sc:Canvas",
+     "label": "[16]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0016.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0016-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0016.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0016.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p16"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p17",
+     "@type": "sc:Canvas",
+     "label": "[17]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0017.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0017-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0017.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0017.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p17"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p18",
+     "@type": "sc:Canvas",
+     "label": "[18]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0018.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0018-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0018.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0018.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p18"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p19",
+     "@type": "sc:Canvas",
+     "label": "[19]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0019.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0019-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0019.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0019.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p19"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p20",
+     "@type": "sc:Canvas",
+     "label": "[20]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0020.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0020-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0020.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0020.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p20"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p21",
+     "@type": "sc:Canvas",
+     "label": "[21]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0021.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0021-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0021.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0021.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p21"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p22",
+     "@type": "sc:Canvas",
+     "label": "[22]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0022.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0022-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0022.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0022.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p22"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p23",
+     "@type": "sc:Canvas",
+     "label": "[23]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0023.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0023-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0023.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0023.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p23"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p24",
+     "@type": "sc:Canvas",
+     "label": "[24]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0024.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0024-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0024.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0024.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p24"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p25",
+     "@type": "sc:Canvas",
+     "label": "[25]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0025.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0025-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0025.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0025.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p25"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p26",
+     "@type": "sc:Canvas",
+     "label": "[26]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0026.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0026-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0026.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0026.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p26"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p27",
+     "@type": "sc:Canvas",
+     "label": "[27]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0027.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0027-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0027.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0027.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p27"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p28",
+     "@type": "sc:Canvas",
+     "label": "[28]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0028.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0028-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0028.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0028.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p28"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p29",
+     "@type": "sc:Canvas",
+     "label": "[29]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-01/tiff/AA006258-01-0029.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0029-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0029.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-01%2Ftiff%2FAA006258-01-0029.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p29"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p30",
+     "@type": "sc:Canvas",
+     "label": "[30]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0001.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0030-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0001.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0001.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p30"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p31",
+     "@type": "sc:Canvas",
+     "label": "[31]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0002.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0031-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0002.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0002.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p31"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p32",
+     "@type": "sc:Canvas",
+     "label": "[32]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0003.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0032-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0003.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0003.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p32"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p33",
+     "@type": "sc:Canvas",
+     "label": "[33]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0004.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0033-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0004.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0004.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p33"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p34",
+     "@type": "sc:Canvas",
+     "label": "[34]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0005.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0034-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0005.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0005.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p34"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p35",
+     "@type": "sc:Canvas",
+     "label": "[35]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0006.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0035-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0006.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0006.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p35"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p36",
+     "@type": "sc:Canvas",
+     "label": "[36]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0007.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0036-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0007.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0007.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p36"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p37",
+     "@type": "sc:Canvas",
+     "label": "[37]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0008.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0037-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0008.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0008.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p37"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p38",
+     "@type": "sc:Canvas",
+     "label": "[38]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0009.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0038-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0009.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0009.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p38"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p39",
+     "@type": "sc:Canvas",
+     "label": "[39]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0010.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0039-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0010.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0010.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p39"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p40",
+     "@type": "sc:Canvas",
+     "label": "[40]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0011.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0040-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0011.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0011.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p40"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p41",
+     "@type": "sc:Canvas",
+     "label": "[41]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0012.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0041-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0012.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0012.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p41"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p42",
+     "@type": "sc:Canvas",
+     "label": "[42]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0013.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0042-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0013.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0013.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p42"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p43",
+     "@type": "sc:Canvas",
+     "label": "[43]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0014.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0043-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0014.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0014.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p43"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p44",
+     "@type": "sc:Canvas",
+     "label": "[44]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0015.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0044-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0015.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0015.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p44"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p45",
+     "@type": "sc:Canvas",
+     "label": "[45]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0016.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0045-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0016.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0016.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p45"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p46",
+     "@type": "sc:Canvas",
+     "label": "[46]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0017.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0046-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0017.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0017.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p46"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p47",
+     "@type": "sc:Canvas",
+     "label": "[47]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0018.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0047-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0018.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0018.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p47"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p48",
+     "@type": "sc:Canvas",
+     "label": "[48]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0019.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0048-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0019.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0019.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p48"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p49",
+     "@type": "sc:Canvas",
+     "label": "[49]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0020.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0049-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0020.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0020.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p49"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p50",
+     "@type": "sc:Canvas",
+     "label": "[50]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0021.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0050-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0021.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0021.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p50"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p51",
+     "@type": "sc:Canvas",
+     "label": "[51]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0022.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0051-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0022.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0022.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p51"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p52",
+     "@type": "sc:Canvas",
+     "label": "[52]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0023.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0052-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0023.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0023.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p52"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p53",
+     "@type": "sc:Canvas",
+     "label": "[53]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0024.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0053-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0024.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0024.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p53"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p54",
+     "@type": "sc:Canvas",
+     "label": "[54]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0025.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0054-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0025.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0025.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p54"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p55",
+     "@type": "sc:Canvas",
+     "label": "[55]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0026.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0055-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0026.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0026.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p55"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p56",
+     "@type": "sc:Canvas",
+     "label": "[56]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-02/tiff/AA006258-02-0027.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0056-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0027.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-02%2Ftiff%2FAA006258-02-0027.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p56"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p57",
+     "@type": "sc:Canvas",
+     "label": "[57]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0001.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0057-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0001.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0001.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p57"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p58",
+     "@type": "sc:Canvas",
+     "label": "[58]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0002_1.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0058-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0002_1.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0002_1.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p58"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p59",
+     "@type": "sc:Canvas",
+     "label": "[59]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0002_2.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0059-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0002_2.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0002_2.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p59"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p60",
+     "@type": "sc:Canvas",
+     "label": "[60]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0003.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0060-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0003.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0003.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p60"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p61",
+     "@type": "sc:Canvas",
+     "label": "[61]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0004.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0061-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0004.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0004.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p61"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p62",
+     "@type": "sc:Canvas",
+     "label": "[62]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0005.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0062-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0005.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0005.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p62"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p63",
+     "@type": "sc:Canvas",
+     "label": "[63]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0006.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0063-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0006.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0006.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p63"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p64",
+     "@type": "sc:Canvas",
+     "label": "[64]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0007.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0064-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0007.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0007.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p64"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p65",
+     "@type": "sc:Canvas",
+     "label": "[65]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0008.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0065-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0008.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0008.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p65"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p66",
+     "@type": "sc:Canvas",
+     "label": "[66]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0009.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0066-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0009.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0009.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p66"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p67",
+     "@type": "sc:Canvas",
+     "label": "[67]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0010.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0067-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0010.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0010.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p67"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p68",
+     "@type": "sc:Canvas",
+     "label": "[68]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0011.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0068-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0011.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0011.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p68"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p69",
+     "@type": "sc:Canvas",
+     "label": "[69]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0012.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0069-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0012.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0012.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p69"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p70",
+     "@type": "sc:Canvas",
+     "label": "[70]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0013.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0070-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0013.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0013.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p70"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p71",
+     "@type": "sc:Canvas",
+     "label": "[71]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0014.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0071-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0014.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0014.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p71"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p72",
+     "@type": "sc:Canvas",
+     "label": "[72]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0015.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0072-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0015.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0015.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p72"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p73",
+     "@type": "sc:Canvas",
+     "label": "[73]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0016.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0073-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0016.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0016.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p73"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p74",
+     "@type": "sc:Canvas",
+     "label": "[74]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0017.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0074-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0017.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0017.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p74"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p75",
+     "@type": "sc:Canvas",
+     "label": "[75]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0018.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0075-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0018.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0018.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p75"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p76",
+     "@type": "sc:Canvas",
+     "label": "[76]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0019.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0076-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0019.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0019.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p76"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p77",
+     "@type": "sc:Canvas",
+     "label": "[77]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0020.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0077-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0020.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0020.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p77"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p78",
+     "@type": "sc:Canvas",
+     "label": "[78]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0021.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0078-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0021.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0021.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p78"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p79",
+     "@type": "sc:Canvas",
+     "label": "[79]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0022.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0079-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0022.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0022.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p79"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p80",
+     "@type": "sc:Canvas",
+     "label": "[80]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0023.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0080-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0023.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0023.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p80"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p81",
+     "@type": "sc:Canvas",
+     "label": "[81]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0024.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0081-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0024.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0024.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p81"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p82",
+     "@type": "sc:Canvas",
+     "label": "[82]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0025.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0082-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0025.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0025.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p82"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p83",
+     "@type": "sc:Canvas",
+     "label": "[83]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0026.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0083-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0026.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0026.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p83"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p84",
+     "@type": "sc:Canvas",
+     "label": "[84]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0027.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0084-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0027.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0027.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p84"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p85",
+     "@type": "sc:Canvas",
+     "label": "[85]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-03/tiff/AA006258-03-0028.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0085-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0028.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-03%2Ftiff%2FAA006258-03-0028.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p85"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p86",
+     "@type": "sc:Canvas",
+     "label": "[86]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0001.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0086-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0001.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0001.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p86"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p87",
+     "@type": "sc:Canvas",
+     "label": "[87]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0002_1.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0087-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0002_1.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0002_1.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p87"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p88",
+     "@type": "sc:Canvas",
+     "label": "[88]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0002_2.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0088-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0002_2.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0002_2.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p88"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p89",
+     "@type": "sc:Canvas",
+     "label": "[89]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0003.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0089-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0003.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0003.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p89"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p90",
+     "@type": "sc:Canvas",
+     "label": "[90]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0004.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0090-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0004.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0004.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p90"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p91",
+     "@type": "sc:Canvas",
+     "label": "[91]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0005.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0091-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0005.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0005.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p91"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p92",
+     "@type": "sc:Canvas",
+     "label": "[92]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0006.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0092-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0006.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0006.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p92"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p93",
+     "@type": "sc:Canvas",
+     "label": "[93]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0007.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0093-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0007.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0007.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p93"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p94",
+     "@type": "sc:Canvas",
+     "label": "[94]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0008.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0094-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0008.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0008.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p94"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p95",
+     "@type": "sc:Canvas",
+     "label": "[95]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0009.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0095-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0009.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0009.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p95"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p96",
+     "@type": "sc:Canvas",
+     "label": "[96]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0010.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0096-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0010.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0010.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p96"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p97",
+     "@type": "sc:Canvas",
+     "label": "[97]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0011.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0097-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0011.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0011.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p97"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p98",
+     "@type": "sc:Canvas",
+     "label": "[98]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0012.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0098-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0012.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0012.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p98"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p99",
+     "@type": "sc:Canvas",
+     "label": "[99]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0013.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0099-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0013.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0013.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p99"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p100",
+     "@type": "sc:Canvas",
+     "label": "[100]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0014.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0100-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0014.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0014.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p100"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p101",
+     "@type": "sc:Canvas",
+     "label": "[101]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0015.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0101-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0015.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0015.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p101"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p102",
+     "@type": "sc:Canvas",
+     "label": "[102]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0016.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0102-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0016.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0016.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p102"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p103",
+     "@type": "sc:Canvas",
+     "label": "[103]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0017.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0103-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0017.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0017.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p103"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p104",
+     "@type": "sc:Canvas",
+     "label": "[104]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0018.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0104-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0018.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0018.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p104"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p105",
+     "@type": "sc:Canvas",
+     "label": "[105]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0019.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0105-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0019.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0019.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p105"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p106",
+     "@type": "sc:Canvas",
+     "label": "[106]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0020.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0106-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0020.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0020.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p106"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p107",
+     "@type": "sc:Canvas",
+     "label": "[107]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0021.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0107-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0021.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0021.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p107"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p108",
+     "@type": "sc:Canvas",
+     "label": "[108]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0022.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0108-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0022.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0022.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p108"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p109",
+     "@type": "sc:Canvas",
+     "label": "[109]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0023.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0109-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0023.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0023.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p109"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p110",
+     "@type": "sc:Canvas",
+     "label": "[110]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0024.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0110-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0024.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0024.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p110"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p111",
+     "@type": "sc:Canvas",
+     "label": "[111]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0025.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0111-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0025.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0025.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p111"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p112",
+     "@type": "sc:Canvas",
+     "label": "[112]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0026.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0112-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0026.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0026.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p112"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p113",
+     "@type": "sc:Canvas",
+     "label": "[113]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0027.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0113-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0027.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0027.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p113"
+      }
+     ]
+    },
+    {
+     "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p114",
+     "@type": "sc:Canvas",
+     "label": "[114]",
+     "thumbnail": {
+      "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/asia2021/A006258/A006258-04/tiff/AA006258-04-0028.tif/full/!220,220/0/default.jpg",
+      "@type": "dctypes:Image",
+      "format": "image/jpeg",
+      "width": 220,
+      "height": 220
+     },
+     "height": 6132,
+     "width": 7514,
+     "images": [
+      {
+       "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/annotation/p0114-image",
+       "@type": "oa:Annotation",
+       "motivation": "sc:painting",
+       "resource": {
+        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0028.tif/full/max/0/default.jpg",
+        "@type": "dctypes:Image",
+        "format": "image/jpeg",
+        "height": 6132,
+        "width": 7514,
+        "service": {
+         "@context": "http://iiif.io/api/image/2/context.json",
+         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/iiif/2/asia2021%2FA006258%2FA006258-04%2Ftiff%2FAA006258-04-0028.tif",
+         "profile": "http://iiif.io/api/image/2/level2.json"
+        }
+       },
+       "on": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/canvas/p114"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
