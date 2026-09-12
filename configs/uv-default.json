@@ -1,0 +1,5 @@
+{
+  "_name": "uv-default",
+  "_label": "UV 既定（何も上書きしない）",
+  "_note": "UV 本体の既定値のまま。confinedImageSize 1000 / maxImageWidth 5000 / 3つの選択肢すべて true。"
+}

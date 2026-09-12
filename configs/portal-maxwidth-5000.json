@@ -1,0 +1,18 @@
+{
+  "_name": "portal-maxwidth-5000",
+  "_label": "現行設定のまま maxImageWidth だけ既定値 5000 に戻す",
+  "_note": "画像は幅 7514px。maxImageWidth が画像幅に効いているなら、フルサイズの選択肢は消えるはず。消えなければ、この設定はこのサーバでは参照されていない。",
+  "modules": {
+    "downloadDialogue": {
+      "options": {
+        "confinedImageSize": 1000,
+        "currentViewDisabledPercentage": 90,
+        "maxImageWidth": 5000,
+        "optionsExplanatoryTextEnabled": false,
+        "selectionEnabled": false,
+        "downloadCurrentViewEnabled": false,
+        "downloadWholeImageLowResEnabled": false
+      }
+    }
+  }
+}

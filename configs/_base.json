@@ -1,0 +1,21 @@
+{
+  "_note": "4つの設定すべてに重ねる土台。ダウンロード画面の日本語ラベルだけを入れてある（本番ポータルの uv-config.json から該当箇所を写したもの）。ここには可否を決める設定を書かない。",
+  "modules": {
+    "downloadDialogue": {
+      "content": {
+        "currentViewAsJpg": "現在の表示 (jpg)",
+        "download": "ダウンロード",
+        "editSettings": "設定の変更",
+        "entireDocument": "全体のドキュメント ({0})",
+        "entireFileAsOriginal": "全体のファイル ({0})",
+        "preview": "プレビュー",
+        "title": "ダウンロード",
+        "wholeImageHighRes": "全体画像 {0} x {1}px ({2})",
+        "wholeImageHighResExplanation": "新しいウィンドウで開く",
+        "wholeImagesHighRes": "全体画像 ({0})",
+        "wholeImageLowResAsJpg": "全体画像 {0} x {1}px (jpg)",
+        "wholeImageLowResAsJpgExplanation": "新しいウィンドウで開く"
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UV ダウンロード設定くらべ</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #fff; --ink: #1c1c1a; --muted: #63635e;
+    --line: #dedcd6; --accent: #7a3e00; --accent-bg: #fdf3e7;
+    --warn-bg: #fef2f2; --warn-line: #dc2626; --ok-bg: #f0fdf4; --ok-line: #16a34a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17171a; --panel: #202024; --ink: #eceae4; --muted: #a3a099;
+      --line: #37373d; --accent: #f0b070; --accent-bg: #2a2118;
+      --warn-bg: #2a1717; --warn-line: #ef4444; --ok-bg: #13251a; --ok-line: #22c55e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.75 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 16px; padding-block: 28px; }
+  h1 { font-size: 22px; line-height: 1.4; margin: 0 0 6px; }
+  h2 { font-size: 17px; margin: 34px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  p { margin: 0 0 12px; }
+  .lede { color: var(--muted); margin-bottom: 20px; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em;
+         background: var(--accent-bg); color: var(--accent); padding: 1px 5px; border-radius: 4px; }
+  a { color: var(--accent); }
+  .controls {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    padding: 14px; display: grid; gap: 12px;
+    grid-template-columns: minmax(0, 1fr) 90px 150px;
+  }
+  @media (max-width: 700px) { .controls { grid-template-columns: 1fr; } }
+  label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  input, select {
+    width: 100%; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px;
+    background: var(--bg); color: var(--ink); font: inherit; font-size: 13px;
+  }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+  .pane { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .pane header { padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  .pane .note { font-size: 12px; color: var(--muted); margin-top: 6px; min-height: 3em; }
+  .pane iframe { display: block; width: 100%; height: 520px; border: 0; background: #000; }
+  .pane .open { font-size: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { border: 1px solid var(--line); padding: 7px 9px; text-align: left; vertical-align: top; }
+  th { background: var(--accent-bg); font-weight: 600; }
+  td.no { background: var(--warn-bg); }
+  td.yes { background: var(--ok-bg); }
+  .steps { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+           border-radius: 8px; padding: 14px 16px 14px 30px; margin: 0; }
+  .steps li { margin-bottom: 8px; }
+  .tablewrap { overflow-x: auto; }
+  footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
+           font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Universal Viewer のダウンロード設定くらべ</h1>
+<p class="lede">
+  同じマニフェストを、設定だけ変えた Universal Viewer で並べて開きます。
+  各ビューアの <strong>ダウンロード（下向き矢印）</strong> を押して、選択肢がいくつ出るかを比べてください。
+</p>
+
+<div class="controls">
+  <div>
+    <label for="manifest">IIIF マニフェスト URL</label>
+    <input id="manifest" type="url" spellcheck="false" />
+  </div>
+  <div>
+    <label for="pos">pos（1 始まり）</label>
+    <input id="pos" type="number" min="1" value="3" />
+  </div>
+  <div>
+    <label for="uv">UV のバージョン</label>
+    <select id="uv">
+      <option value="4.0.25">4.0.25（本番と同じ / 2023-11）</option>
+      <option value="4.4.4">4.4.4（最新 / 2026-08）</option>
+    </select>
+  </div>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<h2>手順</h2>
+<ol class="steps">
+  <li>左右それぞれのビューアで、下部のツールバーにある<strong>ダウンロードのアイコン</strong>を押す。</li>
+  <li>出てくる選択肢の<strong>数</strong>を数える。<code>portal</code> は 1 つ、<code>fixed</code> は 3 つになるはず。</li>
+  <li>左を <code>portal</code>、右を <code>portal-maxwidth-5000</code> に切り替える。
+      <code>maxImageWidth</code> を既定の 5000 に戻しても<strong>フルサイズの選択肢が消えない</strong>ことを確かめる
+      （画像は幅 7514px なので、もしこの設定が画像幅に効いているなら消えるはず）。</li>
+  <li>UV のバージョンを 4.4.4 に切り替えて、<strong>何も変わらない</strong>ことを確かめる。</li>
+  <li><a href="probe.html">計測ページ</a>で、画像サーバ側の所要時間とキャッシュの有無を測る。</li>
+</ol>
+
+<h2>設定の差分</h2>
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr>
+      <th>設定キー</th>
+      <th>portal</th>
+      <th>portal-maxwidth-5000</th>
+      <th>fixed</th>
+      <th>uv-default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>downloadCurrentViewEnabled</code><br><span style="font-size:12px">表示中の範囲（軽い）</span></td>
+      <td class="no">false</td><td class="no">false</td><td class="yes">true</td><td class="yes">true</td>
+    </tr>
+    <tr>
+      <td><code>downloadWholeImageLowResEnabled</code><br><span style="font-size:12px">小さい全体画像（軽い）</span></td>
+      <td class="no">false</td><td class="no">false</td><td class="yes">true</td><td class="yes">true</td>
+    </tr>
+    <tr>
+      <td><code>downloadWholeImageHighResEnabled</code><br><span style="font-size:12px">フルサイズ（重い）</span></td>
+      <td class="yes">true</td><td class="yes">true</td><td class="yes">true</td><td class="yes">true</td>
+    </tr>
+    <tr>
+      <td><code>confinedImageSize</code><br><span style="font-size:12px">小さい全体画像の長辺</span></td>
+      <td>1000</td><td>1000</td><td>2000</td><td>1000</td>
+    </tr>
+    <tr>
+      <td><code>maxImageWidth</code><br><span style="font-size:12px">＊このサーバでは参照されない</span></td>
+      <td>100000</td><td>5000</td><td>100000</td><td>5000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p style="font-size:13px;color:var(--muted);margin-top:10px">
+  <code>maxImageWidth</code> が比べている相手は画像の幅ではなく、<code>info.json</code> の
+  <code>profile</code> がうたう <code>maxWidth</code>（サーバの自称する上限）です。
+  Cantaloupe は上限を <code>maxArea</code> でうたい <code>maxWidth</code> を出さないため、この比較自体が行われません。
+  <a href="probe.html">計測ページ</a>でサーバの <code>profile</code> を確かめられます。
+</p>
+
+<footer>
+  設定ファイルは <code>configs/*.json</code>。ビューアのラッパーは <code>viewer.html</code>。
+  UV は jsDelivr からバージョン固定で読み込んでいます。
+  <a href="https://github.com/nakamura196/uv-config-lab">リポジトリ</a>
+</footer>
+
+</div>
+
+<script>
+  var DEFAULT_MANIFEST = "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/manifest";
+  var CONFIGS = [
+    { name: "portal",               label: "現行ポータル設定（再現）",                       note: "軽い選択肢を2つとも false。ダウンロード画面にはフルサイズしか出ない。" },
+    { name: "portal-maxwidth-5000", label: "現行設定 + maxImageWidth を既定の 5000 に戻す",  note: "安全弁が効くならフルサイズが消えるはず。消えなければ、この設定は参照されていない。" },
+    { name: "fixed",                label: "修正案（軽い選択肢を戻す）",                     note: "2つを true に戻し、confinedImageSize を 2000 へ。フルサイズを押さずに済む道ができる。" },
+    { name: "uv-default",           label: "UV 既定（何も上書きしない）",                    note: "UV 本体の既定値のまま。" }
+  ];
+  var PANES = ["portal", "fixed"]; // 左右の初期値
+
+  var qs = new URLSearchParams(location.search);
+  var $manifest = document.getElementById("manifest");
+  var $pos = document.getElementById("pos");
+  var $uv = document.getElementById("uv");
+
+  $manifest.value = qs.get("manifest") || DEFAULT_MANIFEST;
+  if (qs.get("pos")) { $pos.value = qs.get("pos"); }
+  if (qs.get("uv")) { $uv.value = qs.get("uv"); }
+
+  var grid = document.getElementById("grid");
+
+  PANES.forEach(function (initial, i) {
+    var pane = document.createElement("div");
+    pane.className = "pane";
+    pane.innerHTML =
+      '<header>' +
+      '  <select data-role="config"></select>' +
+      '  <div class="note"></div>' +
+      '  <div class="open"><a target="_blank" rel="noopener">単独で開く ↗</a></div>' +
+      '</header>' +
+      '<iframe title="viewer" loading="lazy"></iframe>';
+    grid.appendChild(pane);
+
+    var sel = pane.querySelector('[data-role="config"]');
+    CONFIGS.forEach(function (c) {
+      var o = document.createElement("option");
+      o.value = c.name;
+      o.textContent = c.name + " — " + c.label;
+      sel.appendChild(o);
+    });
+    sel.value = initial;
+    sel.addEventListener("change", function () { render(pane, sel.value); });
+    pane._render = function () { render(pane, sel.value); };
+  });
+
+  function viewerUrl(configName) {
+    var p = new URLSearchParams({
+      config: configName,
+      manifest: $manifest.value.trim() || DEFAULT_MANIFEST,
+      pos: $pos.value || "1",
+      uv: $uv.value
+    });
+    return "viewer.html?" + p.toString();
+  }
+
+  function render(pane, configName) {
+    var meta = CONFIGS.filter(function (c) { return c.name === configName; })[0];
+    pane.querySelector(".note").textContent = meta ? meta.note : "";
+    var url = viewerUrl(configName);
+    pane.querySelector("iframe").src = url;
+    pane.querySelector(".open a").href = url;
+  }
+
+  function renderAll() {
+    Array.prototype.forEach.call(grid.children, function (pane) { pane._render(); });
+  }
+
+  [$manifest, $pos, $uv].forEach(function (el) {
+    el.addEventListener("change", renderAll);
+  });
+
+  renderAll();
+</script>
+</body>
+</html>

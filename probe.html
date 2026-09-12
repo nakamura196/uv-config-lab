@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IIIF 画像サーバ 計測</title>
+<style>
+  :root {
+    --bg:#f7f7f5; --panel:#fff; --ink:#1c1c1a; --muted:#63635e; --line:#dedcd6;
+    --accent:#7a3e00; --accent-bg:#fdf3e7; --warn-bg:#fef2f2; --warn-line:#dc2626;
+    --ok-bg:#f0fdf4; --ok-line:#16a34a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#17171a; --panel:#202024; --ink:#eceae4; --muted:#a3a099; --line:#37373d;
+      --accent:#f0b070; --accent-bg:#2a2118; --warn-bg:#2a1717; --warn-line:#ef4444;
+      --ok-bg:#13251a; --ok-line:#22c55e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:15px/1.75 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 16px; padding-block: 28px; }
+  h1 { font-size: 21px; margin: 0 0 6px; }
+  h2 { font-size: 16px; margin: 30px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  p { margin: 0 0 12px; }
+  .lede { color: var(--muted); }
+  a { color: var(--accent); }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:.9em;
+         background: var(--accent-bg); color: var(--accent); padding: 1px 5px; border-radius: 4px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+  label { display:block; font-size:12px; color:var(--muted); margin-bottom:4px; }
+  input, select { width:100%; padding:7px 9px; border:1px solid var(--line); border-radius:6px;
+                  background:var(--bg); color:var(--ink); font:inherit; font-size:13px; }
+  button { font: inherit; font-size: 13px; padding: 7px 14px; border-radius: 6px; cursor: pointer;
+           border: 1px solid var(--accent); background: var(--accent); color: var(--panel); }
+  button.ghost { background: transparent; color: var(--accent); }
+  button[disabled] { opacity: .5; cursor: default; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; margin-top: 10px; }
+  th, td { border: 1px solid var(--line); padding: 6px 9px; text-align: left; }
+  th { background: var(--accent-bg); }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .tablewrap { overflow-x: auto; }
+  .warn { background: var(--warn-bg); border-left: 3px solid var(--warn-line);
+          border-radius: 6px; padding: 10px 14px; font-size: 13px; margin: 16px 0; }
+  .verdict { border-radius: 8px; padding: 12px 14px; margin-top: 12px; font-size: 14px; display: none; }
+  .verdict.bad { background: var(--warn-bg); border-left: 3px solid var(--warn-line); }
+  .verdict.good { background: var(--ok-bg); border-left: 3px solid var(--ok-line); }
+  #log { font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: var(--muted);
+         white-space: pre-wrap; margin-top: 10px; }
+  dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: 13px; margin: 0; }
+  dt { color: var(--muted); }
+  dd { margin: 0; font-family: ui-monospace, Menlo, monospace; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>IIIF 画像サーバ 計測</h1>
+<p class="lede">
+  ブラウザから IIIF Image API を直接叩いて、サイズごとの所要時間と、
+  サーバ側に変換結果のキャッシュがあるかどうかを調べます。
+</p>
+
+<div class="warn">
+  <strong>本番サーバに実際の負荷をかけます。</strong>
+  フルサイズの生成は 1 枚あたり数秒の CPU を使います。並列数を上げすぎないでください。
+  ブラウザのキャッシュは <code>cache: "no-store"</code> で迂回しているので、
+  測っているのは毎回サーバ側の時間です。
+</div>
+
+<div class="card">
+  <label for="manifest">IIIF マニフェスト URL（ここから 1 コマ目の画像サービスを引きます）</label>
+  <input id="manifest" type="url" spellcheck="false" />
+  <div class="row">
+    <button id="load">読み込む</button>
+    <button id="sizes" class="ghost" disabled>サイズ別に測る</button>
+    <button id="repeat" class="ghost" disabled>同じ URL を 3 回（キャッシュ判定）</button>
+    <button id="parallel" class="ghost" disabled>フルサイズ 4 本同時</button>
+  </div>
+  <div id="log"></div>
+</div>
+
+<h2>サーバが名乗っている内容（info.json）</h2>
+<div class="card" id="infobox"><span class="lede">まだ読み込んでいません。</span></div>
+
+<h2>計測結果</h2>
+<div class="tablewrap">
+  <table id="results">
+    <thead><tr><th>計測</th><th>size</th><th class="num">所要 (ms)</th><th class="num">bytes</th><th>状態</th></tr></thead>
+    <tbody></tbody>
+  </table>
+</div>
+<div class="verdict" id="verdict"></div>
+
+<p style="margin-top:24px"><a href="index.html">← ビューアの比較に戻る</a></p>
+
+</div>
+
+<script>
+var DEFAULT_MANIFEST = "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/manifest";
+
+var $ = function (id) { return document.getElementById(id); };
+var qs = new URLSearchParams(location.search);
+$("manifest").value = qs.get("manifest") || DEFAULT_MANIFEST;
+
+var service = null;   // 画像サービスの base URL
+var info = null;      // info.json
+
+function log(msg) { $("log").textContent = msg; }
+
+function addRow(kind, size, ms, bytes, state) {
+  var tb = $("results").querySelector("tbody");
+  var tr = document.createElement("tr");
+  tr.innerHTML =
+    "<td>" + kind + "</td><td><code>" + size + "</code></td>" +
+    '<td class="num">' + (ms === null ? "—" : Math.round(ms)) + "</td>" +
+    '<td class="num">' + (bytes === null ? "—" : bytes.toLocaleString()) + "</td>" +
+    "<td>" + state + "</td>";
+  tb.appendChild(tr);
+  return tr;
+}
+
+// 1 リクエストを最後まで読み切って、かかった時間とバイト数を返す。
+async function timeFetch(url) {
+  var t0 = performance.now();
+  var res = await fetch(url, { cache: "no-store", mode: "cors" });
+  var blob = await res.blob();
+  var t1 = performance.now();
+  return { ms: t1 - t0, bytes: blob.size, status: res.status, ok: res.ok };
+}
+
+function imageUrl(size) { return service + "/full/" + size + "/0/default.jpg"; }
+
+async function loadManifest() {
+  var url = $("manifest").value.trim();
+  if (!url) { return; }
+  log("マニフェストを読み込み中…");
+  try {
+    var res = await fetch(url, { mode: "cors" });
+    if (!res.ok) { throw new Error("HTTP " + res.status); }
+    var m = await res.json();
+
+    // Presentation API 2 / 3 の両方から 1 コマ目の画像サービスを拾う。
+    var svc = null, w = null, h = null;
+    if (m.sequences) {                                   // Presentation 2
+      var c = m.sequences[0].canvases[0];
+      w = c.width; h = c.height;
+      svc = c.images[0].resource.service["@id"];
+    } else if (m.items) {                                // Presentation 3
+      var c3 = m.items[0];
+      w = c3.width; h = c3.height;
+      var body = c3.items[0].items[0].body;
+      var s = Array.isArray(body.service) ? body.service[0] : body.service;
+      svc = s.id || s["@id"];
+    }
+    if (!svc) { throw new Error("画像サービスが見つかりません"); }
+    service = svc.replace(/\/$/, "");
+
+    log("画像サービス: " + service);
+    var ires = await fetch(service + "/info.json", { mode: "cors" });
+    info = await ires.json();
+    renderInfo(w, h);
+
+    ["sizes", "repeat", "parallel"].forEach(function (id) { $(id).disabled = false; });
+  } catch (e) {
+    log("読み込みに失敗しました: " + e.message +
+        "（CORS が許可されていないサーバでは、このページからは測れません）");
+  }
+}
+
+function renderInfo(cw, ch) {
+  var prof = Array.isArray(info.profile)
+    ? info.profile.filter(function (p) { return typeof p === "object"; })[0] || {}
+    : {};
+  var maxW = prof.maxWidth !== undefined ? prof.maxWidth : (info.maxWidth !== undefined ? info.maxWidth : null);
+  var maxArea = prof.maxArea !== undefined ? prof.maxArea : (info.maxArea !== undefined ? info.maxArea : null);
+  var area = info.width * info.height;
+  var sizes = (info.sizes || []).map(function (s) { return s.width + "×" + s.height; }).join(" / ") || "（なし）";
+
+  var maxWnote = maxW === null
+    ? '<strong style="color:var(--warn-line)">宣言なし</strong> → UV の maxImageWidth は参照されない'
+    : maxW + "（UV の maxImageWidth はこの値と比べられる）";
+  var maxAreaNote = maxArea === null
+    ? "宣言なし"
+    : maxArea.toLocaleString() + (maxArea === area
+        ? '　<strong style="color:var(--warn-line)">画像の面積と同じ → 実質的に上限なし</strong>'
+        : "　（画像の面積 " + area.toLocaleString() + " より小さい＝上限あり）");
+
+  $("infobox").innerHTML =
+    "<dl>" +
+    "<dt>画像サイズ</dt><dd>" + info.width + " × " + info.height + " px = " + area.toLocaleString() + " px</dd>" +
+    "<dt>profile の maxWidth</dt><dd>" + maxWnote + "</dd>" +
+    "<dt>profile の maxArea</dt><dd>" + maxAreaNote + "</dd>" +
+    "<dt>sizes</dt><dd>" + sizes + "</dd>" +
+    "<dt>Mirador のプラグイン</dt><dd>この sizes から選択肢を作ります</dd>" +
+    "</dl>";
+}
+
+async function runSizes() {
+  var fullW = info.width;
+  var plan = [
+    ["512px タイル相当", "!512,512"],
+    ["小さい全体画像", "!1000,1000"],
+    ["中くらい", "2000,"],
+    ["大きめ", "4000,"],
+    ["フルサイズ", fullW + ","]
+  ];
+  setBusy(true);
+  for (var i = 0; i < plan.length; i++) {
+    var row = addRow(plan[i][0], plan[i][1], null, null, "測定中…");
+    try {
+      var r = await timeFetch(imageUrl(plan[i][1]));
+      row.remove();
+      addRow(plan[i][0], plan[i][1], r.ms, r.bytes, r.ok ? "OK" : "HTTP " + r.status);
+    } catch (e) {
+      row.remove();
+      addRow(plan[i][0], plan[i][1], null, null, "失敗: " + e.message);
+    }
+  }
+  setBusy(false);
+}
+
+async function runRepeat() {
+  var size = info.width + ",";
+  var times = [];
+  setBusy(true);
+  for (var i = 1; i <= 3; i++) {
+    try {
+      var r = await timeFetch(imageUrl(size));
+      times.push(r.ms);
+      addRow("同一 URL " + i + " 回目", size, r.ms, r.bytes, r.ok ? "OK" : "HTTP " + r.status);
+    } catch (e) {
+      addRow("同一 URL " + i + " 回目", size, null, null, "失敗: " + e.message);
+    }
+  }
+  setBusy(false);
+
+  if (times.length === 3) {
+    var first = times[0];
+    var rest = Math.min(times[1], times[2]);
+    var v = $("verdict");
+    v.style.display = "block";
+    if (rest < first * 0.4) {
+      v.className = "verdict good";
+      v.innerHTML = "<strong>2 回目以降が速い。</strong> サーバ側に変換結果のキャッシュ（derivative cache）が効いています。" +
+                    "（1 回目 " + Math.round(first) + " ms → 以降 " + Math.round(rest) + " ms）";
+    } else {
+      v.className = "verdict bad";
+      v.innerHTML = "<strong>何度叩いても同じだけかかっています。</strong> サーバ側に変換結果のキャッシュが効いていません。" +
+                    "同じ URL でも毎回、元画像を展開して JPEG に焼き直しています。" +
+                    "（" + times.map(function (t) { return Math.round(t) + " ms"; }).join(" / ") + "）";
+    }
+  }
+}
+
+async function runParallel() {
+  var size = info.width + ",";
+  var n = 4;
+  setBusy(true);
+  var jobs = [];
+  for (var i = 0; i < n; i++) { jobs.push(timeFetch(imageUrl(size))); }
+  var results = await Promise.allSettled(jobs);
+  results.forEach(function (r, i) {
+    if (r.status === "fulfilled") {
+      addRow(n + " 本同時 (" + (i + 1) + ")", size, r.value.ms, r.value.bytes,
+             r.value.ok ? "OK" : "HTTP " + r.value.status);
+    } else {
+      addRow(n + " 本同時 (" + (i + 1) + ")", size, null, null, "失敗: " + r.reason.message);
+    }
+  });
+  setBusy(false);
+}
+
+function setBusy(b) {
+  ["load", "sizes", "repeat", "parallel"].forEach(function (id) { $(id).disabled = b; });
+  if (!b && service) { ["sizes", "repeat", "parallel"].forEach(function (id) { $(id).disabled = false; }); }
+}
+
+$("load").addEventListener("click", loadManifest);
+$("sizes").addEventListener("click", runSizes);
+$("repeat").addEventListener("click", runRepeat);
+$("parallel").addEventListener("click", runParallel);
+</script>
+</body>
+</html>

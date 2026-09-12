@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>UV viewer (lab)</title>
+<style>
+  html, body { margin: 0; padding: 0; overflow: hidden; height: 100%; background: #fff; }
+  .uv { height: 100% !important; }
+  .uv .headerPanel .total { width: auto !important; }
+  .uv .headerPanel .centerOptions .search { width: auto !important; }
+  .uv > div.loaded { height: 100% !important; }
+  .uv .leftPanel .views .thumbsView .thumbs { width: auto !important; }
+  .thumbs.left-to-right span { width: 50%; display: inline-block; float: left; }
+  .thumbs.right-to-left span { width: 50%; display: inline-block; float: right; }
+  #err {
+    display: none; font: 13px/1.6 system-ui, sans-serif; padding: 16px;
+    color: #7f1d1d; background: #fef2f2; border-bottom: 2px solid #dc2626;
+  }
+</style>
+</head>
+<body>
+<div id="err"></div>
+<div class="uv" id="uv"></div>
+
+<script>
+  // ---------------------------------------------------------------
+  // 本番ポータルのラッパー (libraries/uv/uv.html) をなぞった実装。
+  // 違いは、manifest / config / UV のバージョンを ?query で選べる点だけ。
+  // ---------------------------------------------------------------
+  var LAB_DEFAULTS = {
+    manifest: "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/2174ef9b-6541-79cc-9d37-a38cac02225c/manifest",
+    config: "portal",
+    uv: "4.0.25",
+    pos: "1"
+  };
+
+  var qs = new URLSearchParams(window.location.search);
+  function param(name) {
+    var v = qs.get(name);
+    return (v === null || v === "") ? LAB_DEFAULTS[name] : v;
+  }
+
+  var CONFIGS = ["portal", "portal-maxwidth-5000", "fixed", "uv-default"];
+  var UV_VERSIONS = ["4.0.25", "4.4.4"];
+
+  var configName = param("config");
+  var uvVersion = param("uv");
+  var manifestUrl = param("manifest");
+
+  function fail(msg) {
+    var el = document.getElementById("err");
+    el.textContent = msg;
+    el.style.display = "block";
+  }
+
+  // ?config= / ?uv= は許可リストで縛る。任意の URL を読み込ませない。
+  if (CONFIGS.indexOf(configName) === -1) {
+    fail("未知の config です: " + configName + " / 使えるのは " + CONFIGS.join(", "));
+    configName = LAB_DEFAULTS.config;
+  }
+  if (UV_VERSIONS.indexOf(uvVersion) === -1) {
+    fail("未知の UV バージョンです: " + uvVersion + " / 使えるのは " + UV_VERSIONS.join(", "));
+    uvVersion = LAB_DEFAULTS.uv;
+  }
+  // manifest は https のみ。
+  try {
+    if (new URL(manifestUrl).protocol !== "https:") { throw new Error("not https"); }
+  } catch (e) {
+    fail("manifest の URL が不正です: " + manifestUrl);
+    manifestUrl = LAB_DEFAULTS.manifest;
+  }
+
+  var base = "https://cdn.jsdelivr.net/npm/universalviewer@" + uvVersion + "/dist/";
+  var link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = base + "uv.css";
+  document.head.appendChild(link);
+
+  var script = document.createElement("script");
+  script.src = base + "umd/UV.js";
+  script.onerror = function () { fail("UV " + uvVersion + " の読み込みに失敗しました。"); };
+  script.onload = boot;
+  document.head.appendChild(script);
+
+  function getJson(url) {
+    return fetch(url).then(function (r) {
+      if (!r.ok) { throw new Error(url + " → HTTP " + r.status); }
+      return r.json();
+    });
+  }
+
+  function deepMerge(a, b) {
+    var out = {};
+    Object.keys(a).forEach(function (k) { out[k] = a[k]; });
+    Object.keys(b).forEach(function (k) {
+      var av = out[k], bv = b[k];
+      out[k] = (av && bv && typeof av === "object" && typeof bv === "object" &&
+                !Array.isArray(av) && !Array.isArray(bv)) ? deepMerge(av, bv) : bv;
+    });
+    return out;
+  }
+
+  function boot() {
+    // 本番と同じく pos は 1 始まり。canvasIndex は 0 始まり。
+    var pos = parseInt(param("pos"), 10);
+    if (isNaN(pos) || pos < 1) { pos = 1; }
+
+    var uv = UV.init("uv", {
+      manifest: manifestUrl,
+      canvasIndex: pos - 1
+    });
+
+    // UV は返した設定を、既定の設定に「深いマージ」で重ねる
+    // (BaseContentHandler.configure -> merge(config, yourConfig))。
+    // なので差分だけを書いたファイルで足りる。
+    // ここでは _base.json (日本語ラベル) の上に変種を重ねてから渡す。
+    uv.on("configure", function (args) {
+      args.cb(
+        Promise.all([
+          getJson("configs/_base.json"),
+          getJson("configs/" + configName + ".json")
+        ]).then(function (parts) {
+          return deepMerge(parts[0], parts[1]);
+        }).catch(function (e) {
+          fail("config の読み込みに失敗しました: " + e.message);
+          return {};
+        })
+      );
+    });
+
+    // 本番と同じく、コマが変わったら親に知らせる。
+    var count = 0;
+    uv.on("canvasIndexChange", function (canvasIndex) {
+      count += 1;
+      window.parent.postMessage({ page: canvasIndex, count: count, config: configName }, "*");
+    }, false);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    var el = document.getElementById("uv");
+    function resize() { el.setAttribute("style", "height:" + window.innerHeight + "px"); }
+    window.addEventListener("resize", resize);
+    resize();
+  });
+</script>
+</body>
+</html>

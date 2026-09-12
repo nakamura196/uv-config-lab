@@ -1,0 +1,18 @@
+{
+  "_name": "fixed",
+  "_label": "修正案（軽い選択肢を戻す）",
+  "_note": "downloadCurrentViewEnabled と downloadWholeImageLowResEnabled を true に戻し、confinedImageSize を 2000 に上げた。フルサイズは残るが、押さずに済む道ができる。",
+  "modules": {
+    "downloadDialogue": {
+      "options": {
+        "confinedImageSize": 2000,
+        "currentViewDisabledPercentage": 90,
+        "maxImageWidth": 100000,
+        "optionsExplanatoryTextEnabled": false,
+        "selectionEnabled": false,
+        "downloadCurrentViewEnabled": true,
+        "downloadWholeImageLowResEnabled": true
+      }
+    }
+  }
+}
